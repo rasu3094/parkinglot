@@ -1,0 +1,34 @@
+{
+  "parkingSlotsCount": 12,
+  "parkingFloorsCount": 3,
+  "name": "Lot1",
+  "parkingFloorRequests": [
+    {
+      "smallSizeSlotsCount": 1,
+      "mediumSizeSlotsCount": 1,
+      "largeSizeSlotsCount": 1,
+      "extraLargeSizeSlotsCount": 1,
+      "parkingSlotsCount": 4,
+      "name": "Floor1",
+      "number": 101
+    },
+    {
+      "smallSizeSlotsCount": 1,
+      "mediumSizeSlotsCount": 1,
+      "largeSizeSlotsCount": 1,
+      "extraLargeSizeSlotsCount": 1,
+      "parkingSlotsCount": 4,
+      "name": "Floor2",
+      "number": 102
+    },
+    {
+      "smallSizeSlotsCount": 1,
+      "mediumSizeSlotsCount": 1,
+      "largeSizeSlotsCount": 1,
+      "extraLargeSizeSlotsCount": 1,
+      "parkingSlotsCount": 4,
+      "name": "Floor3",
+      "number": 103
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+	"info": {
+		"_postman_id": "3eab0982-66f4-4378-aecb-01b61be611f7",
+		"name": "ParkingLot",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "319872"
+	},
+	"item": [
+		{
+			"name": "Get Free slot",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"registrationNumber\": 82,\r\n  \"color\": \"Block\",\r\n  \"type\": \"SMALL\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/v1/parking/0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"parking",
+						"0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add new parking lot",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"parkingSlotsCount\": 12,\r\n  \"parkingFloorsCount\": 3,\r\n  \"name\": \"Lot1\",\r\n   \"parkingFloorRequests\": [\r\n    {\r\n    \"smallSizeSlotsCount\": 1,\r\n    \"mediumSizeSlotsCount\": 1,\r\n    \"largeSizeSlotsCount\": 1,\r\n    \"extraLargeSizeSlotsCount\": 1,\r\n    \"parkingSlotsCount\": 4,\r\n    \"name\": \"Floor1\",\r\n    \"number\": 101\r\n  },\r\n  {\r\n    \"smallSizeSlotsCount\": 1,\r\n    \"mediumSizeSlotsCount\": 1,\r\n    \"largeSizeSlotsCount\": 1,\r\n    \"extraLargeSizeSlotsCount\": 1,\r\n    \"parkingSlotsCount\": 4,\r\n    \"name\": \"Floor2\",\r\n    \"number\": 102\r\n  },\r\n  {\r\n    \"smallSizeSlotsCount\": 1,\r\n    \"mediumSizeSlotsCount\": 1,\r\n    \"largeSizeSlotsCount\": 1,\r\n    \"extraLargeSizeSlotsCount\": 1,\r\n    \"parkingSlotsCount\": 4,\r\n    \"name\": \"Floor3\",\r\n    \"number\": 103\r\n  }\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/v1/parking-lot",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"parking-lot"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Free slot Copy",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/v1/parking/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"parking",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

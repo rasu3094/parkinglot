@@ -1,0 +1,12 @@
+Postman documentation : https://documenter.getpostman.com/view/319872/2s8ZDX3i6a
+
+Postman collection added
+
+Tools
+Spring boot
+Docker deployment
+h2 in memory database
+swagger integration - facing issue in swagger ui
+Request and Response Logging
+Integration test added
+Unit testing and mockito - yet to add
